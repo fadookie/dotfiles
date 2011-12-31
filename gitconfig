@@ -1,0 +1,17 @@
+[user]
+	email = fadookie@gmail.com
+	name = Eliot
+[alias]
+	stat = status
+	st = status
+	co = checkout
+	br = branch
+[color]
+	diff = auto
+	ui = auto
+[difftool "Kaleidoscope"]
+	cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
+[diff]
+	tool = Kaleidoscope
