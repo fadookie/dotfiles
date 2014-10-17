@@ -25,8 +25,11 @@ set hlsearch "highlight search results
 
 set hi=150 " command history is 150 long
 
+" forward-delete key
+inoremap <C-d> <Del>
+
 " new omni-completion key
-imap <C-Space> <C-x><C-o>
+inoremap <C-Space> <C-x><C-o>
 
 "Source another config
 "so /path/to/config
