@@ -6,6 +6,9 @@
 	st = status
 	co = checkout
 	br = branch
+	prb = pull --rebase
+	copy-head = !git rev-parse --short HEAD|tr -d '\n'|pbcopy
+	su = submodule update --init --recursive
 [color]
 	diff = auto
 	ui = auto
@@ -15,3 +18,11 @@
 	prompt = false
 [diff]
 	tool = Kaleidoscope
+[core]
+	excludesfile = /Users/eliot/Dev/git/dotfiles/gitignore
+[push]
+	default = simple
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
