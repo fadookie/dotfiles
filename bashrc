@@ -16,6 +16,7 @@ PROMPT_COMMAND='__git_ps1 "\u@\h:\w" "\\\$ "'
 PAGER=less
 
 realpath () { python -c "import os; print os.path.realpath('$1')"; }
+alias mvim=vim
 
 source "$HOME/dotfiles/git-completion.bash"
 source "$HOME/dotfiles/git-prompt.sh"
